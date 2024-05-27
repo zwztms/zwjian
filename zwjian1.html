@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum scale=1,maximum-scale=1,user-scalable=no" />
+        <title>减脂</title>
+         <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+         <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        function calc(){
+            wei=$("#weight").val();
+            weig = parseInt(wei);
+
+            dytts = weig * 1.5;
+            dytdbz = weig * 1.5;
+            dytzf = weig * 0.7;
+            $("#dytts").text(dytts);
+            $("#dytdbz").text(dytdbz);
+            $("#dytzf").text(dytzf);
+
+            detts = weig * 1.5;
+            detdbz = weig * 1.5;
+            detzf = weig * 0.7;
+            $("#detts").text(detts);
+            $("#detdbz").text(detdbz);
+            $("#detzf").text(detzf);
+
+            dstts = weig * 1.5;
+            dstdbz = weig * 1.5;
+            dstzf = weig *0.7;
+            $("#dstts").text(dstts);
+            $("#dstdbz").text(dstdbz);
+            $("#dstzf").text(dstzf);
+
+            dstts = weig * 1.5;
+            dstdbz = weig * 1.5;
+            dstzf = weig *0.7;
+            $("#dstts").text(dstts);
+            $("#dstdbz").text(dstdbz);
+            $("#dstzf").text(dstzf);
+
+            dsitts = weig * 2.5;
+            dsitdbz = weig * 1.5;
+            dsitzf = weig *0.5;
+            $("#dsitts").text(dsitts);
+            $("#dsitdbz").text(dsitdbz);
+            $("#dsitzf").text(dsitzf);
+
+            dwtts = weig * 1.5;
+            dwtdbz = weig * 1.5;
+            dwtzf = weig *0.7;
+            $("#dwtts").text(dwtts);
+            $("#dwtdbz").text(dwtdbz);
+            $("#dwtzf").text(dwtzf);
+
+            dltts = weig * 1.5;
+            dltdbz = weig * 1.5;
+            dltzf = weig *0.7;
+            $("#dltts").text(dltts);
+            $("#dltdbz").text(dltdbz);
+            $("#dltzf").text(dltzf);
+
+            dqtts = weig * 1.5;
+            dqtdbz = weig * 1.5;
+            dqtzf = weig *0.7;
+            $("#dqtts").text(dqtts);
+            $("#dqtdbz").text(dqtdbz);
+            $("#dqtzf").text(dqtzf);
+        }
+            </script>
+    </head>
+    <body>
+        <div class="container text-center">
+        <table class="table table-bordered text-center">
+            <caption>碳循环减脂饮食</caption>
+            <tr>
+                <td>体重</td>
+                <td colspan="3"><input type="text" id="weight" class="form-control" placeholder="请输入体重"></td>
+                <td>
+                    <button class="btn btn-danger btn-block" onclick="calc()">计算</button>
+                </td>
+            </tr>
+            <tr class="bg-primary">
+                <td></td>
+                <td>周一</td>
+                <td>周二</td>
+                <td>周三</td>
+                <td>周四</td>
+                <td>周五</td>
+                <td>周六</td>
+                <td>周日</td>
+            </tr>
+            <tr>
+                <td class="bg-primary">碳水</td>
+                <td id="dytts"></td>
+                <td id="detts"></td>
+                <td id="dstts"></td>
+                <td id="dsitts"></td>
+                <td id="dwtts"></td>
+                <td id="dltts"></td>
+                <td id="dqtts"></td>
+            </tr>
+            <tr>
+                <td class="bg-primary">蛋白质</td>
+                <td id="dytdbz"></td>
+                <td id="detdbz"></td>
+                <td id="dstdbz"></td>
+                <td id="dsitdbz"></td>
+                <td id="dwtdbz"></td>
+                <td id="dltdbz"></td>
+                <td id="dqtdbz"></td>
+            </tr>
+            <tr>
+                <td class="bg-primary">脂肪</td>
+                <td id="dytzf"></td>
+                <td id="detzf"></td>
+                <td id="dstzf"></td>
+                <td id="dsitzf"></td>
+                <td id="dwtzf"></td>
+                <td id="dltzf"></td>
+                <td id="dqtzf"></td>
+            </tr>
+        </table>
+        </div>
+
+    </body>
+</html>
